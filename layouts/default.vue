@@ -294,4 +294,14 @@ export default class Default extends Vue implements NuxtConfig {
     margin: 0 auto 20px;
   }
 }
+@media (prefers-color-scheme: dark) {
+  .app{
+   background-color: white !important;
+   filter:invert(93%)  hue-rotate(180deg) !important;
+  }
+
+  #app img{
+   filter: invert(93%) hue-rotate(180deg);
+  }
+}
 </style>
